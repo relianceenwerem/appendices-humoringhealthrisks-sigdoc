@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appendices — Humoring Health Risks</title>
+  <style>
+    /* Base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #1a1a1a;
+      background: #fafaf8;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    header p.eyebrow {
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      line-height: 1.3;
+    }
+
+    header h1 em {
+      font-style: italic;
+      color: #444;
+      font-size: 1rem;
+      display: block;
+      margin-top: 0.4rem;
+    }
+
+    /* Section headings */
+    h2 {
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #666;
+      margin: 3rem 0 1.25rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 1.75rem 0 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    /* Figure */
+    .figure-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 2rem;
+      margin: 1.5rem 0;
+    }
+
+    @media (max-width: 600px) {
+      .figure-wrap { grid-template-columns: 1fr; }
+    }
+
+    .figure-wrap figcaption {
+      font-family: 'Courier New', monospace;
+      font-size: 0.78rem;
+      color: #666;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+
+    /* Diamond SVG */
+    .diamond-svg {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Adapted points list */
+    .points-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .points-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .points-list li:last-child { border-bottom: none; }
+
+    .points-list li strong {
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      display: block;
+      color: #555;
+      margin-bottom: 0.2rem;
+    }
+
+    /* Table */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      background: #fff;
+    }
+
+    caption {
+      font-family: 'Courier New', monospace;
+      font-size: 0.78rem;
+      color: #666;
+      text-align: left;
+      margin-bottom: 0.5rem;
+      caption-side: top;
+      padding-bottom: 0.5rem;
+    }
+
+    th {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 0.65rem 0.85rem;
+      text-align: left;
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      font-weight: normal;
+    }
+
+    td {
+      padding: 0.65rem 0.85rem;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #f9f9f7; }
+
+    /* Creator profiles */
+    .creator-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .creator-card h3 {
+      margin-top: 0;
+      font-size: 1rem;
+    }
+
+    .creator-card .handle {
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    /* Selection criteria */
+    .criteria-list {
+      list-style: lower-alpha;
+      padding-left: 1.5rem;
+      font-size: 0.92rem;
+    }
+
+    .criteria-list li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #ddd;
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <p class="eyebrow">Research Appendices</p>
+    <h1>Humoring Health Risks: Social Media Skits as Tactical Risk Communication
+      <em>Enwerem, Okhumode &amp; Amiokhaibhor</em>
+    </h1>
+  </header>
+
+  <!-- APPENDIX A -->
+  <h2>Appendix A — Gabin's Theoretical Model</h2>
+
+  <p>Table 1: Gabin's theoretical model adapted to the context of tactical risk communication</p>
+
+  <div class="figure-wrap">
+    <figure>
+      <svg class="diamond-svg" viewBox="0 0 260 300" xmlns="http://www.w3.org/2000/svg" aria-label="Gabin's diamond model diagram">
+        <!-- Diamond shape -->
+        <polygon points="130,20 240,150 130,280 20,150" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Horizontal line A–C -->
+        <line x1="20" y1="150" x2="240" y2="150" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3"/>
+        <!-- Vertical axis B–D -->
+        <line x1="130" y1="20" x2="130" y2="280" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <!-- Labels -->
+        <text x="130" y="12" text-anchor="middle" font-size="10" font-family="Georgia,serif">B</text>
+        <text x="130" y="296" text-anchor="middle" font-size="10" font-family="Georgia,serif">D</text>
+        <text x="8" y="154" text-anchor="middle" font-size="10" font-family="Georgia,serif">A</text>
+        <text x="252" y="154" text-anchor="middle" font-size="10" font-family="Georgia,serif">C</text>
+
+        <!-- Annotations -->
+        <text x="145" y="9" font-size="7.5" font-family="Courier New,monospace" fill="#555">Inverted image</text>
+        <text x="145" y="18" font-size="7.5" font-family="Courier New,monospace" fill="#555">(violation of expectation)</text>
+        <text x="145" y="292" font-size="7.5" font-family="Courier New,monospace" fill="#555">Expected image</text>
+        <text x="145" y="301" font-size="7.5" font-family="Courier New,monospace" fill="#555">(audience expectation)</text>
+
+        <text x="4" y="143" font-size="7.5" font-family="Courier New,monospace" fill="#555" text-anchor="end">Symbol</text>
+        <text x="256" y="143" font-size="7.5" font-family="Courier New,monospace" fill="#555">Referent</text>
+
+        <!-- Audience label -->
+        <text x="130" y="147" text-anchor="middle" font-size="8.5" font-family="Georgia,serif" font-style="italic">AUDIENCE</text>
+        <text x="130" y="158" text-anchor="middle" font-size="7.5" font-family="Courier New,monospace" fill="#555">hears, reads, thinks, sees</text>
+
+        <!-- Arrows on axes -->
+        <polygon points="130,22 126,32 134,32" fill="#1a1a1a"/>
+        <polygon points="130,278 126,268 134,268" fill="#1a1a1a"/>
+        <polygon points="22,150 32,146 32,154" fill="#1a1a1a"/>
+        <polygon points="238,150 228,146 228,154" fill="#1a1a1a"/>
+      </svg>
+      <figcaption>Fig. 1. Gabin's (1987) theoretical model</figcaption>
+    </figure>
+
+    <div>
+      <p><strong>Adapted to the context of this study:</strong></p>
+      <ul class="points-list">
+        <li>
+          <strong>Point A — Symbol</strong>
+          The social media post, infographic, video, or campaign.
+        </li>
+        <li>
+          <strong>Point C — Referent</strong>
+          The body, the behavior, the condition being discussed.
+        </li>
+        <li>
+          <strong>Point B — Inverted Image</strong>
+          The health risk reality (what is actually happening to the body, what the disease does, the statistical likelihood of harm).
+        </li>
+        <li>
+          <strong>Point D — Expected Image</strong>
+          The audience's prior assumption (that they are healthy, that the risk does not apply to them, that the behavior is harmless).
+        </li>
+        <li>
+          <strong>Audience (center)</strong>
+          The patient or public simultaneously holding their comfortable assumption (D) against the disrupting health reality (B).
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- APPENDIX B -->
+  <h2>Appendix B — Diamond Model Distribution Across Skits</h2>
+
+  <div class="table-wrap">
+    <table>
+      <caption>Table 2: Diamond's humor model distribution across selected skits from creators' profiles</caption>
+      <thead>
+        <tr>
+          <th>Health Professional</th>
+          <th>Specialization</th>
+          <th>Point A / Symbol (Skit)</th>
+          <th>Point C / Referent</th>
+          <th>Point B / Inverted Image (Health Risk Reality)</th>
+          <th>Point D / Expected Image (Prior Assumption)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dr. Idrees Mughal (Dr. Idz)</td>
+          <td>Medical Doctor; MSc Nutritional Research; Board-Certified Lifestyle Medicine</td>
+          <td>"Maha Hospital Skit"</td>
+          <td>Alternative medicines</td>
+          <td>Alternative medicines and common "wellness hacks" marketed by social media wellness influencers are risky</td>
+          <td>Wellness trends are healthy</td>
+        </tr>
+        <tr>
+          <td>Dr. Franziska Haydanek (Dr. Fran)</td>
+          <td>Board-certified obstetrician-gynecologist (ObGyn)</td>
+          <td>Stitch video responding to misinformation</td>
+          <td>Women's health</td>
+          <td>There might actually be some protection from endometriosis with tampon use</td>
+          <td>Using tampons can cause endometriosis</td>
+        </tr>
+        <tr>
+          <td>Dr. Adefunke Arowolo (Dr. Funke)</td>
+          <td>Medical Doctor</td>
+          <td>"Azoospermia"</td>
+          <td>Reproduction</td>
+          <td>Male reproductive factors also contribute to infertility</td>
+          <td>Infertility is primarily caused by women</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CREATOR PROFILES -->
+  <h2>Appendix C — Creator Profiles</h2>
+
+  <div class="creator-card">
+    <h3>Dr. Idrees Mughal</h3>
+    <span class="handle">@dr_idz — Instagram</span>
+    <p>Dr. Idrees Mughal is an Instagram-verified and popular health content creator. A visit to his page establishes his credentials as a UK-trained Medical Doctor with a master's degree in Nutritional Research as well as a Board-Certified Lifestyle Medicine professional. His profile picture portrays him in a lab coat and stethoscope, typical of medical professionals. These are tactics used to establish credibility on this platform, outside the institution where he practices professionally. With over 700,000 Instagram followers, Dr. Idz communicates health risks by debunking health myths and countering misinformation using affordances like hashtags, short video content, and trends.</p>
+  </div>
+
+  <div class="creator-card">
+    <h3>Dr. Franziska Haydanek</h3>
+    <span class="handle">@pagingdrfran — Instagram</span>
+    <p>Dr. Franziska Haydanek explicitly positions herself as a board-certified obstetrician-gynecologist (ObGyn), and this professional identity is consistently foregrounded through her social media profiles. Her Instagram bio emphasizes both institutional credibility ("board-certified OBGYN") and experiential authority ("mother of three"), while the use of the female doctor and pregnant person emojis functions as a semiotic shorthand for reproductive expertise and care. The use of Instagram's highlight features to organize content into categories such as "PCOS," "PMDD," "breastfeeding," and "elective induction of labor" constructs a curated knowledge archive, signaling sustained engagement with women's health education. All of this shapes how viewers interpret her content, as they are already positioned to see her as a reliable source.</p>
+  </div>
+
+  <div class="creator-card">
+    <h3>Dr. Adefunke Arowolo</h3>
+    <span class="handle">@doctor.adefunke — Instagram</span>
+    <p>Dr. Adefunke Arowolo is a medical doctor, health advocate, and digital health content creator who leverages social media to deliver accessible health education through humor and storytelling. With over 280,000 followers on Instagram, she leverages details like "Medical Doctor," "Educative Medical Content," and "Spreading Awareness, One Laugh at a Time" in her bio to establish her professional credibility and content niche. Her content spans issues related to sexual and reproductive health, medication safety, food risks, mental health, and general wellness, often presented through short, humorous skits that integrate visual, verbal, and performative elements.</p>
+  </div>
+
+  <!-- SKIT SELECTION CRITERIA -->
+  <h2>Skit Selection Criteria</h2>
+
+  <p>Following creator selection, a sample of three skits was collected. The selection was based on the criteria that:</p>
+
+  <ul class="criteria-list">
+    <li>It was a short video that employed skit-style conventions;</li>
+    <li>It communicated a health risk or debunked a health misconception;</li>
+    <li>It was among the creator's 20 most recent posts at the time of data collection; and</li>
+    <li>It employed multimodality as a communicative strategy.</li>
+  </ul>
+
+  <p style="margin-top:1rem;">Each video was subsequently treated as an individual unit of analysis for the multimodal discourse analysis (MDA), while its humorous element was analyzed using Gabin's (1987) humor model.</p>
+
+  <footer>
+    Humoring Health Risks: Social Media Skits as Tactical Risk Communication &mdash; Enwerem, Okhumode &amp; Amiokhaibhor &mdash; Research Appendices
+  </footer>
+
+</div>
+</body>
+</html>
